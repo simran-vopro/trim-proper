@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meddon&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-inter">
+
+    <!-- 1. Hero section start-->
+    <section class="relative h-[700px] md:h-[900px] flex flex-col justify-between">
+        <video autoplay muted loop class="video-background">
+            <source src="./assests/images/hero_vedio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+
+        <!-- Header start-->
+
+        <header class="fixed top-0 left-0 right-0 md:mx-5 lg:mx-auto md:mt-5 z-99999 bg-[#fefaf0] lg:container">
+            <nav class="flex items-center justify-between px-5 md:px-3 lg:px-10 py-2">
+                <div>
+                    <img src="./assests/images/logo.jpg" alt="Trim & Proper Gardens Logo" class="h-12 md:h-17">
+                </div>
+                <div
+                    class="hidden md:flex md:gap-10 lg:gap-15 text-black md:text-[12px] lg:text-[14px] font-inter h-17 items-center">
+                    <div class="menu-item active">
+                        <a href="#hero-item">Home</a>
+                    </div>
+
+                    <div class="menu-item">
+                        <a href="#about-us">About us</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#services">Services</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#our-work">Our Work</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#reviews">Reviews</a>
+                    </div>
+                </div>
+                <a href="#contact"
+                    class="bg-[#399a32] md:text-[12px] text-white md:py-2 md:px-4 lg:px-6 lg:py-3 hover:bg-green-700 transition duration-300 font-inter hidden md:block">
+                    Contact us
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-icon md:hidden">
+                    <button id="mobileMenuBtn" class="text-2xl text-[#399a32]">&#9776;</button>
+                </div>
+
+                <!-- Mobile Menu Content -->
+                <div id="mobileMenu"
+                    class="hidden flex-col items-center bg-[#fefaf0] p-8 absolute top-0 right-0 w-[60%] h-[700px] shadow-lg md:hidden z-40">
+                    <div id="close" class="flex justify-end mb-5 font-bold">X</div>
+                    <div class="menu-item active mb-2"><a href="#hero-item">Home</a></div><br>
+                    <div class="menu-item  mb-2"><a href="#about-us">About us</a></div><br>
+                    <div class="menu-item mb-2"><a href="#">Services</a></div><br>
+                    <div class="menu-item mb-2"><a href="#">Our Work</a></div><br>
+                    <div class="menu-item mb-2"><a href="#">Reviews</a></div><br>
+                    <button
+                        class="bg-[#399a32] text-white px-6 py-2 hover:bg-green-700 transition duration-300 font-inter">
+                        Contact us
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Header end-->
+
+        <div id="hero-item" class="relative z-10 flex flex-col items-center justify-center flex-grow text-center px-4">
+            <p class="text-[#f7ae47] text-base mb-2 uppercase tracking-wide font-bold font-inter">Trim & Proper Gardens
+            </p>
+            <h1 class="text-white text-4xl md:text-7xl leading-tight mb-6 font-Playfair">
+                Considered care for beautiful, <br> low-stress gardens.
+            </h1>
+            <p class="text-white max-w-3xl mb-10 font-inter">
+                Expert maintenance, pruning, planting, and seasonal tidy-ups across domestic and commercial spaces
+                without going heavy on the greenwash.
+            </p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <button
+                    class="bg-white text-gray-800 px-6 py-2 rounded-lg hover:bg-green-700 hover:text-white transition duration-300 font-inter">
+                    Request a Quote
+                </button>
+                <button
+                    class="border border-white text-white px-6 py-2 rounded-lg hover:bg-green-700 hover:text-white hover:border-green-700 transition duration-300 font-inter">
+                    See Recent Work
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white px-4 py-3 md:px-3 lg:p-4">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Card 1 -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/b1.jpg" alt="Plants"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+                <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex items-end">
+                    <h2
+                        class="text-[#1A4D2E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-Playfair z-10 leading-tight transition-transform duration-500 ease-out group-hover:-translate-y-1 drop-shadow-md">
+                        Plants
+                    </h2>
+                </div>
+
+                <div
+                    class="absolute inset-0 border border-[#BCBCBC] pointer-events-none m-2 sm:m-4 md:m-5 opacity-100 transition-opacity duration-500 ease-out group-hover:opacity-0">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/b2.jpg" alt="For Home"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+                <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex items-end">
+                    <h2
+                        class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-Playfair z-10 leading-tight transition-transform duration-500 ease-out group-hover:-translate-y-1 drop-shadow-lg">
+                        For Home
+                    </h2>
+                </div>
+
+                <div
+                    class="absolute inset-0 border border-[#BCBCBC] pointer-events-none m-2 sm:m-4 md:m-5 opacity-100 transition-opacity duration-500 ease-out group-hover:opacity-0">
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/b3.jpg" alt="For Garden"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+                <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex items-end">
+                    <h2
+                        class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-Playfair z-10 leading-tight transition-transform duration-500 ease-out group-hover:-translate-y-1 drop-shadow-lg">
+                        For Garden
+                    </h2>
+                </div>
+
+                <div
+                    class="absolute inset-0 border border-[#BCBCBC] pointer-events-none m-2 sm:m-4 md:m-5 opacity-100 transition-opacity duration-500 ease-out group-hover:opacity-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1. Hero section end-->
+
+    <!-- 2. About us section start -->
+    <section id="about-us" class="relative py-10 sm:py-16 md:py-24 lg:py-32 bg-[#fff] overflow-hidden">
+        <div class="container mx-auto relative px-4 sm:px-6 lg:px-0">
+            <div
+                class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 w-full max-w-[1000px] xl:max-w-[1140px] mx-auto">
+
+                <!-- Text Section -->
+                <div class="z-[1] w-full lg:w-1/2">
+                    <p
+                        class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
+                        About Us
+                    </p>
+
+                    <p
+                        class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] mb-5 font-Playfair text-center lg:text-left leading-snug">
+                        Professional Garden Care
+                    </p>
+
+                    <p
+                        class="text-[#616161] text-base sm:text-lg font-inter mb-5 text-center lg:text-left px-2 sm:px-0">
+                        We provide full services in irrigation, landscape, maintenance and professional tree care
+                        management.
+                    </p>
+
+                    <p
+                        class="text-[#616161] text-sm sm:text-[16px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
+                        Expert maintenance, pruning, planting, and seasonal tidy-ups across domestic and commercial
+                        spaces without going heavy on the greenwash. Our lawn care team is trained not only to meet
+                        customer
+                        expectations.
+                    </p>
+
+                    <div class="flex justify-center lg:justify-start">
+                        <button
+                            class="bg-[#399a32] text-white px-6 py-3 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
+                            Request a Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Image Section -->
+                <div class="z-[1] w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <div
+                        class="w-[260px] sm:w-[320px] md:w-[380px] lg:w-[460px] xl:w-[600px] h-[260px] sm:h-[320px] md:h-[380px] lg:h-[460px] xl:h-[600px] overflow-hidden rounded-full shadow-2xl">
+                        <img src="./assests/images/about.webp" alt="Smiling gardener working with plants"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- green text -->
+        <div
+            class="absolute top-[10%] sm:top-[5%] left-4 sm:left-10 lg:left-20 text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] font-Playfair text-[#F9F7F3] font-Meddon leading-none select-none pointer-events-none">
+            green
+        </div>
+
+        <!-- care text -->
+        <div
+            class="absolute bottom-[5%] right-4 sm:right-10 lg:right-[180px] xl:right-[230px] text-[80px] sm:text-[120px] md:text-[140px] lg:text-[150px] xl:text-[160px] font-Playfair text-[#F9F7F3] font-Meddon leading-none select-none pointer-events-none">
+            life
+        </div>
+    </section>
+
+    <!-- 2. About us section end -->
+
+
+
+    <!-- 3. services section start -->
+    <section id="services" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+        <div class="container mx-auto relative px-2 sm:px-0 z-1">
+            <div class="flex flex-col items-center justify-center lg:w-[1140px] mx-auto mb-20">
+                <p
+                    class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
+                    Our Services
+                </p>
+
+                <p
+                    class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] mb-2 font-Playfair text-center lg:text-left leading-snug">
+                    What Can We Offer
+                </p>
+
+                <p class="text-[#616161] text-[16px] font-inter px-2 md:px-0 lg:mb-5 lg:w-[60%] text-center">
+                    Our mission is to provide our customers with responsive service and unsurpassed quality at an
+                    affordable price.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1140px] mx-auto">
+
+                <!-- Service Card 1 -->
+                <div class="relative text-center group">
+                    <div class="relative inline-block">
+                        <div
+                            class="bg-white rounded-full shadow-lg w-32 h-32 flex items-center justify-center mx-auto relative z-1 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            <img src="./assests/images/icons/1.png" alt="Garden Design" class="w-12 h-12">
+                        </div>
+
+                        <!-- Decorative leaf behind -->
+                        <img src="./assests/images/s1.png" alt="leaf" class="absolute -right-10 -top-8 acity-90">
+
+                        <!-- Number Badge -->
+                        <div
+                            class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            01</div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-2">Regular Maintenance</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Lawn care, weeding, edging, and seasonal tidy‑ups that keep everything shipshape.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="relative text-center group lg:mt-10">
+                    <div class="relative inline-block">
+                        <div
+                            class="bg-white rounded-full shadow-lg w-32 h-32 flex items-center justify-center mx-auto relative z-1 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            <img src="./assests/images/icons/2.png" alt="Garden Design" class="w-12 h-12">
+                        </div>
+
+                        <!-- Decorative leaf behind -->
+                        <img src="./assests/images/s2.png" alt="leaf" class="absolute lg:-right-5 -top-8 w-17">
+
+                        <!-- Number Badge -->
+                        <div
+                            class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            02</div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-2">Planting & Design</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            From border refreshes to full planting plans we favour textures and year‑round interest.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="relative text-center group">
+                    <div class="relative inline-block">
+                        <div
+                            class="bg-white rounded-full shadow-lg w-32 h-32 flex items-center justify-center mx-auto relative z-1 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            <img src="./assests/images/icons/3.png" alt="Garden Design" class="w-13 h-13">
+                        </div>
+
+                        <!-- Decorative leaf behind -->
+                        <img src="./assests/images/s3.png" alt="leaf" class="absolute -right-7 -top-3">
+
+                        <!-- Number Badge -->
+                        <div
+                            class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            03</div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-2">Hedges & Trees</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Pruning and shaping that’s sympathetic to the plant, done with care and safety in mind.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="relative text-center group lg:mt-10">
+                    <div class="relative inline-block">
+                        <div
+                            class="bg-white rounded-full shadow-lg w-32 h-32 flex items-center justify-center mx-auto relative z-1 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            <img src="./assests/images/icons/4.png" alt="Garden Design" class="w-12 h-12">
+                        </div>
+
+                        <!-- Decorative leaf behind -->
+                        <img src="./assests/images/s4.png" alt="leaf"
+                            class="absolute -left-5 lg:-right-5 lg:left-20 -top-8 w-17">
+
+                        <!-- Number Badge -->
+                        <div
+                            class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+                            04</div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-2">Small Landscaping</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Patios, paths, raised beds and fencing clean lines, tidy finishes, and lasting materials.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- top right img -->
+        <div class="absolute -top-10 lg:top-[-40px] hidden md:block right-10 z-1 md:w-40 lg:w-60"><img
+                src="./assests/images/services_top.png" />
+        </div>
+
+
+        <!-- leaf left top -->
+        <div class="absolute top-[0] -left-40 md:left-0"><img src="./assests/images/leaf.png" /></div>
+        <!-- leaf right center -->
+        <div class="absolute bottom-[0%] -right-50 lg:right-[-100px]  z-0"><img class="w-70"
+                src="./assests/images/leaf_02.png" />
+        </div>
+    </section>
+    <!-- 3. services section end -->
+
+    <!-- 4. projects section start -->
+
+    <section id="our-work" class="p-5 lg:p-0">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Card -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/work/1.jpg" alt="Plants"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+                <!-- Hover Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/30 backdrop-blur-sm lg:bg-transparent pointer-events-none m-3 sm:m-4 lg:m-3 lg:opacity-0 transition-all duration-500 ease-out md:group-hover:bg-black/30 md:group-hover:backdrop-blur-sm group-hover:opacity-100 flex items-end">
+                    <!-- Text Container -->
+                    <div class="p-5 text-left">
+                        <p class="bg-[#FBB03B] py-1 px-3 text-white w-fit mb-2">Tag 1</p>
+                        <h3 class="text-2xl text-white font-semibold">Project 1</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/work/2.jpg" alt="For Home"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+
+                <!-- Hover Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/30 backdrop-blur-sm lg:bg-transparent pointer-events-none m-3 sm:m-4 lg:m-3 lg:opacity-0 transition-all duration-500 ease-out md:group-hover:bg-black/30 md:group-hover:backdrop-blur-sm group-hover:opacity-100 flex items-end">
+                    <!-- Text Container -->
+                    <div class="p-5 text-left">
+                        <p class="bg-[#FBB03B] py-1 px-3 text-white w-fit mb-2">Tag 2</p>
+                        <h3 class="text-2xl text-white font-semibold">Project 2</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/work/3.jpg" alt="For Garden"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+
+                <!-- Hover Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/30 backdrop-blur-sm lg:bg-transparent pointer-events-none m-3 sm:m-4 lg:m-3 lg:opacity-0 transition-all duration-500 ease-out md:group-hover:bg-black/30 md:group-hover:backdrop-blur-sm group-hover:opacity-100 flex items-end">
+                    <!-- Text Container -->
+                    <div class="p-5 text-left">
+                        <p class="bg-[#FBB03B] py-1 px-3 text-white w-fit mb-2">Tag 3</p>
+                        <h3 class="text-2xl text-white font-semibold">Project 3</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="./assests/images/b3.jpg" alt="For Garden"
+                        class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+                </div>
+
+                <!-- Hover Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/30 backdrop-blur-sm lg:bg-transparent pointer-events-none m-3 sm:m-4 lg:m-3 lg:opacity-0 transition-all duration-500 ease-out md:group-hover:bg-black/30 md:group-hover:backdrop-blur-sm group-hover:opacity-100 flex items-end">
+                    <!-- Text Container -->
+                    <div class="p-5 text-left">
+                        <p class="bg-[#FBB03B] py-1 px-3 text-white w-fit mb-2">Tag 4</p>
+                        <h3 class="text-2xl text-white font-semibold">Project 4</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. projects section end -->
+
+
+
+    <!-- 5. reviews section start -->
+    <section id="reviews" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+        <div class="container mx-auto relative px-2 sm:px-0 z-1">
+            <div
+                class="flex flex-col items-center justify-center mx-auto bg-[#F8F5F0] lg:w-150 h-100 lg:h-150 md:rounded-full relative">
+                <p
+                    class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
+                    Testimonials
+                </p>
+
+                <p
+                    class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] mb-2 font-Playfair text-center lg:text-left leading-snug">
+                    What Clients Say
+                </p>
+
+
+                <div class="flex justify-center items-center w-[95%] lg:w-[60%] text-center">
+                    <div class="swiper-button bg-green-500 rounded-full swiper-button-prev -left-20"></div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center mb-10">
+                                    “Working with Garderia is always an absolute joy, both personally and
+                                    professionally. Tommy is an amazing speaker; his expertise and genuine passion for
+                                    what he does is obvious in every word he says.”
+                                </p>
+
+                                <p class="mb-2">Jane Gardi</p>
+                                <p class="text-[14px] text-[#8d8d8d]">Client of Company</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center mb-10">
+                                    “Working with Garderia is always an absolute joy, both personally and
+                                    professionally. Tommy is an amazing speaker; his expertise and genuine passion for
+                                    what he does is obvious in every word he says.”
+                                </p>
+
+                                <p class="mb-2">Jane Gardi</p>
+                                <p class="text-[14px] text-[#8d8d8d]">Client of Company</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center mb-10">
+                                    “Working with Garderia is always an absolute joy, both personally and
+                                    professionally. Tommy is an amazing speaker; his expertise and genuine passion for
+                                    what he does is obvious in every word he says.”
+                                </p>
+
+                                <p class="mb-2">Jane Gardi</p>
+                                <p class="text-[14px] text-[#8d8d8d]">Client of Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button bg-green-500 rounded-full swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- 5. reviews section end -->
+
+    <!-- 6. contact beofre section end -->
+    <section class="relative h-[300px] md:h-[400px] flex flex-col justify-between">
+        <img src="./assests/images/contact_bg.jpg" class="video-background"></img>
+
+        <div id="hero-item" class="relative z-10 flex flex-col items-center justify-center flex-grow text-center px-4">
+            <p class="text-[#f7ae47] text-base uppercase tracking-wide font-bold font-inter">Bring nature in your
+                home
+            </p>
+            <p
+                class="text-[#fff] text-2xl sm:text-3xl md:text-[42px] my-5 font-Playfair lg:text-center leading-snug text-center">
+                We Take Care of Your<br>Garden 24/7
+            </p>
+
+            <button
+                class="border border-white text-white px-6 py-2 rounded-lg hover:bg-green-700 hover:text-white hover:border-green-700 transition duration-300 font-inter">
+                Get a Quote
+            </button>
+
+        </div>
+    </section>
+    <!-- 6. contact beofre section end -->
+
+    <!-- 7. Contact Us / Stay Connected Section -->
+    <section id="contact" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-[#fff]">
+        <div class="container mx-auto relative px-4 sm:px-6 lg:px-8 z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start max-w-[1140px] mx-auto">
+
+                <!-- Left: Contact Form -->
+                <div>
+                    <p
+                        class="text-[#f7ae47] text-center lg:text-left text-base uppercase tracking-wide font-bold font-inter">
+                        Stay Connected
+                    </p>
+                    <h3
+                        class="text-[#141c14] text-2xl sm:text-3xl md:text-[30px] mb-2 font-Playfair text-center lg:text-left leading-snug">
+                        Stay Connected with us for updates
+                    </h3>
+                    <p
+                        class="text-[#616161] text-sm sm:text-[14px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
+                        Send a quick note and we’ll get back to you within one working day.
+                    </p>
+
+                    <form class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Full name"
+                                class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-green-500" />
+                            <input type="email" placeholder="name@example.com"
+                                class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-green-500" />
+                        </div>
+
+                        <textarea placeholder="Tell us about your garden..."
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 h-28 focus:outline-none focus:border-green-500"></textarea>
+
+                        <button
+                            class="bg-[#399a32] text-white px-6 py-3 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
+                            Request a Quote
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social Media Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Instagram -->
+                    <div class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
+                        <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
+                            <i class="fab fa-instagram text-[#399a32] text-[30px]"></i>
+                        </div>
+
+                        <div class="text-[#141c14] text-xl font-semibold mb-2">
+                            Instagram
+                        </div>
+                        <p class="text-[#616161] text-[12px] mb-4">Plant inspirations and tips to keep your greenery
+                            thriving.</p>
+                        <button
+                            class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">Follow
+                            Us</button>
+                    </div>
+
+                    <!-- Facebook -->
+                    <div class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
+                        <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
+                            <i class="fa-brands fa-facebook-f text-[#399a32] text-[25px]"></i>
+                        </div>
+
+                        <div class="text-[#141c14] text-xl font-semibold mb-2">
+                            Facebook
+                        </div>
+                        <p class="text-[#616161] text-[12px] mb-4">Latest updates and events that connect the Greenery
+                            community.</p>
+
+                        <button
+                            class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">Follow
+                            Us</button>
+                    </div>
+
+                    <!-- Pinterest -->
+                    <div class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
+
+                        <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
+                            <i class="fab fa-pinterest text-[#399a32] text-[25px]"></i>
+                        </div>
+
+                        <div class="text-[#141c14] text-xl font-semibold mb-2">
+                            Pinterest
+                        </div>
+                        <p class="text-[#616161] text-[12px] mb-4">Curated boards with plant designs and ideas for green
+                            living.</p>
+
+
+                        <button
+                            class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">Follow
+                            Us</button>
+                    </div>
+
+                    <!-- YouTube -->
+                    <div class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
+                        <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
+                            <i class="fab fa-youtube text-[#399a32] text-[25px]"></i>
+                        </div>
+
+                        <div class="text-[#141c14] text-xl font-semibold mb-2">
+                            YouTube
+                        </div>
+                        <p class="text-[#616161] text-[12px] mb-4">Step-by-step tutorials to grow and care for indoor
+                            gardens.</p>
+
+                        <button
+                            class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">Follow
+                            Us</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Decorative leaf (bottom-right) -->
+        <img src="./assests/images/leaf-2.svg" alt="leaf decoration"
+            class="absolute bottom-0 right-0 opacity-20 w-[400px] hidden md:block" />
+    </section>
+
+    <!-- 8. Footer / Copyright Section -->
+    <footer class="bg-[#141c14] text-white py-6 text-center md:text-left relative">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>© Copyright 2025. All rights reserved.</p>
+
+            <div class="flex flex-col md:flex-row gap-2 md:gap-8 items-center mt-3 md:mt-0">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone text-[#f7ae47]"></i>
+                    <span>Contact Us At <strong>474-937-8270</strong></span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-[#f7ae47]"></i>
+                    <span>hello@trimandpropergardens.co.uk</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('close')
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Initialize Swiper after the bundle is loaded -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            fadeEffect: {
+                crossFade: true      // 👈 Smooth cross-fade
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
+
+    <script>
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".menu-item");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 120; // adjust for header height
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                const href = link.querySelector("a")?.getAttribute("href");
+                if (href === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

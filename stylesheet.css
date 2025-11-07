@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.font-Playfair {
+    font-family: "Playfair", serif;
+}
+
+.font-Inter {
+    font-family: "Inter", sans-serif;
+}
+
+.font-Meddon {
+    font-family: "Meddon", cursive;
+}
+
+
+/* Hero section start */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #141c149a;
+    z-index: -1;
+}
+
+
+/* Hero section header */
+
+.menu-item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    color: #141c14;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.menu-item a {
+    background-color: #fefaf0;
+}
+
+.menu-item.active::before,
+.menu-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('./assests/images/active_menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+/* Hover and Active State: Show the leaf and change text color */
+.menu-item:hover,
+.menu-item.active {
+    color: #399a32;
+}
+
+.hover-color-green:hover {
+    color: #399a32
+}
+
+
+/* ==== service ==== */
+#services {
+    background-color: #F8F5F0;
+    /* background-image: url(./assests/images/services_btm.png); */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#reviews {
+    background-color: #fff;
+    background-image: url(./assests/images/reviews_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.swiper-navigation-icon {
+    height: 20px !important;
+    color: #fff;
+}
+
+.swiper-button-prev {
+    left: -20px
+}
+
+.swiper-button-next {
+    right: -20px !important
+}
+
+.swiper-fade .swiper-slide {
+    transition: opacity 1s ease-in-out;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile view */
+@media (max-width: 768px) {
+    .menu-item {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .menu-item.active {
+        padding: 10px 0;
+    }
+
+    .swiper-button-prev {
+        display: none
+    }
+
+    .swiper-button-next {
+        display: none
+    }
+
+}
