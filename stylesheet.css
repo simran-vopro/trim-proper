@@ -38,7 +38,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #141c149a;
+    background-color: #141c14c2;
     z-index: -1;
 }
 
@@ -51,13 +51,13 @@ body {
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
-    color: #141c14;
+    color: #fff;
     text-decoration: none;
     font-family: "Inter", sans-serif;
 }
 
 .menu-item a {
-    background-color: #fefaf0;
+    /* background-color: #fefaf0; */
 }
 
 .menu-item.active::before,
@@ -69,7 +69,7 @@ body {
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    background-image: url('./assests/images/active_menu.png');
+    /* background-image: url('./assests/images/active_menu.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -81,7 +81,8 @@ body {
 /* Hover and Active State: Show the leaf and change text color */
 .menu-item:hover,
 .menu-item.active {
-    color: #399a32;
+    color: #65e95b;
+    font-weight: 800;
 }
 
 .hover-color-green:hover {
