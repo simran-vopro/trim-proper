@@ -92,11 +92,24 @@ body {
 
 /* ==== service ==== */
 #services {
+    position: relative;
     background-color: #F8F5F0;
-    /* background-image: url(./assests/images/services_btm.png); */
-    background-position: bottom center;
+    background-image: url(./assests/images/b3.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    width: 100%;
+}
+
+
+#services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #141c14c2;
+    z-index: 0;
 }
 
 #reviews {
@@ -137,13 +150,10 @@ body {
 /* Mobile view */
 @media (max-width: 768px) {
     .menu-item {
-        display: inline-block;
+        color: #000;
         margin-bottom: 30px;
     }
 
-    .menu-item.active {
-        padding: 10px 0;
-    }
 
     .swiper-button-prev {
         display: none
