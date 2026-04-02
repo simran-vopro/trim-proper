@@ -18,152 +18,152 @@
 </head>
 
 <body class="font-inter">
-  <!-- 1. Hero section start-->
-  <section class="relative h-[700px] md:h-[900px] flex flex-col justify-between">
-    <!-- <video autoplay muted loop class="video-background">
-      <source src="./assests/images/hero_vedio.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
-    <img src="./assests/images/b3.jpg" class="video-background" />
-    <div class="overlay"></div>
+  <section class="relative flex flex-col items-center justify-center overflow-hidden bg-[#0a120a]">
+
+    <div class="absolute inset-0 z-0">
+      <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+    </div>
 
     <!-- Header start-->
-    <header class="md:mx-5 lg:mx-auto z-[9999] bg-[#fff0] lg:container shadow-sm">
-      <nav class="flex items-center justify-between px-5 md:px-3 lg:px-10 pb-2">
+    <header class="absolute top-0 left-0 w-full z-[9999] pt-10 md:pt-5 px-6">
+      <nav class="max-w-[1400px] mx-auto flex items-center justify-between">
 
-        <div
-          class="hidden md:flex items-center gap-6 lg:gap-10 text-black md:text-[12px] lg:text-[14px] font-inter flex-1 justify-end">
-          <div class="menu-item active"><a href="#hero-item">Home</a></div>
-          <div class="menu-item"><a href="#about-us">About us</a></div>
-          <div class="menu-item"><a href="#services">Services</a></div>
+        <div class="hidden md:flex items-center gap-10 lg:gap-16 flex-1 justify-end">
+          <a href="#hero-item"
+            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Home</a>
+          <a href="#about-us"
+            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">About
+            us</a>
+          <a href="#services"
+            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Services</a>
         </div>
 
-        <div class="flex-shrink-0 px-12 py-5 order-first md:order-none bg-[#fefaf0] mx-10">
-          <a href="/">
-            <img src="./assests/images/logo.jpg" alt="Trim & Proper Gardens Logo" class="h-15 md:h-25 lg:h-35">
+        <div class="flex-shrink-0 mx-8 md:mx-16">
+          <a href="/" class="block transition-transform hover:scale-101">
+            <img src="./assests/images/logo_white.png" alt="Logo"
+              class="h-14 md:h-30 lg:h-40 object-contain brightness-110 rounded-xl shadow-2xl">
           </a>
         </div>
 
-        <div
-          class="hidden md:flex items-center gap-6 lg:gap-10 text-black md:text-[12px] lg:text-[14px] font-inter flex-1">
-          <div class="menu-item"><a href="#our-work">Our Work</a></div>
-          <div class="menu-item"><a href="#reviews">Reviews</a></div>
-          <div class="menu-item"><a href="#contact">Contact us</a></div>
-        </div>
-
-        <div class="mobile-menu-icon md:hidden">
-          <button id="mobileMenuBtn" class="text-2xl text-[#399a32]">&#9776;</button>
-        </div>
-
-        <div id="mobileMenu"
-          class="fixed hidden flex-col items-center bg-[#fefaf0] p-8 absolute top-0 right-0 w-[70%] h-[700px] shadow-lg md:hidden z-40">
-          <div id="close" class="flex justify-end mb-5 font-bold cursor-pointer">X</div>
-          <div class="menu-item mb-2"><a href="#hero-item">Home</a></div>
-          <div class="menu-item mb-2"><a href="#about-us">About us</a></div>
-          <div class="menu-item mb-2"><a href="#services">Services</a></div>
-          <div class="menu-item mb-2"><a href="#our-work">Our Work</a></div>
-          <div class="menu-item mb-2"><a href="#reviews">Reviews</a></div>
-
+        <div class="hidden md:flex items-center gap-10 lg:gap-16 flex-1">
+          <a href="#our-work"
+            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Our
+            Work</a>
+          <a href="#reviews"
+            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Reviews</a>
           <a href="#contact"
-            class="bg-[#399a32] text-white px-6 py-2 mt-4 hover:bg-green-700 transition duration-300 font-inter">
-            Contact us
-          </a>
+            class="text-[10px] uppercase tracking-[0.4em] font-bold text-[#f7ae47] hover:brightness-125 transition-all">Contact
+            us</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="mobileMenuBtn" class="text-3xl text-white/80">&#9776;</button>
         </div>
       </nav>
     </header>
     <!-- Header end-->
 
-    <div id="hero-item" class="relative z-10 flex flex-col items-center justify-center flex-grow text-center px-4">
-      <p class="text-[#f7ae47] text-lg mb-2 uppercase tracking-wide font-bold font-inter">Trim & Proper Gardens
-      </p>
-      <h1 class="text-white text-4xl md:text-7xl leading-tight mb-6 font-Playfair">
-        Considered Care for Beautiful Gardens <br> That Thrive.
+    <div id="hero-item" class="relative z-10 w-full max-w-5xl px-6 text-center my-20 md:mt-60">
+
+      <div class="inline-flex items-center gap-3 mb-10">
+        <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+        <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">
+          Trim & Proper Gardens
+        </p>
+        <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+      </div>
+
+      <h1 class="text-white text-4xl md:text-6xl lg:text-8xl leading-[1.2] mb-10 font-serif tracking-tight">
+        Considered Care for <br>
+        <span class="italic font-light">Beautiful Gardens That Thrive.</span>
       </h1>
-      <p class="text-white text-lg max-w-3xl mb-10 font-inter">
-        Expert maintenance, pruning, planting, and seasonal tidy-ups across domestic and commercial spaces -
-        because the only thing you should be pruning is your to-do list.
+
+      <p class="text-white/70 text-base md:text-base max-w-2xl mx-auto mb-16 font-light leading-relaxed tracking-wide">
+        Expert maintenance, pruning, planting, and seasonal tidy-ups across domestic and commercial spaces, because the
+        only thing you should be pruning is your to-do list.
       </p>
-      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
         <a href="#contact"
-          class="bg-green-700 text-white px-6 py-5  hover:bg-green-700 hover:text-white transition duration-300 font-inter">
+          class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
           Request a Quote
         </a>
+
         <a href="tel:+17703437971"
-          class="border-2 border-green-700 text-white px-8 py-5  hover:bg-green-700 hover:text-white transition duration-300 font-inter">
+          class="w-full md:w-auto border border-white/20 text-white/80 px-10 py-4 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[12px] font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
           Call Now
         </a>
       </div>
     </div>
   </section>
-  <!-- 1. Hero section end-->
 
   <!-- 2. About us section start -->
   <section id="about-us" class="relative py-10 sm:py-16 md:py-24 lg:py-32 bg-[#fff] overflow-hidden">
-    <div class="container mx-auto relative px-4 sm:px-6 lg:px-0">
-      <div
-        class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 w-full max-w-[1000px] xl:max-w-[1140px] mx-auto">
-        <!-- Text Section -->
-        <div class="z-[1] w-full lg:w-1/2">
-          <p
-            class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
-            About Us
-          </p>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
-          <p
-            class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] mb-5 font-Playfair text-center lg:text-left leading-snug">
-            Why Choose Trim & Proper
-          </p>
+        <div class="w-full lg:w-1/2 order-2 lg:order-1">
+          <div class="relative group">
+            <div
+              class="absolute -inset-4 border border-black/20 rounded-2xl transition-transform duration-700 group-hover:scale-95">
+            </div>
 
-          <p class="text-[#616161] text-base sm:text-lg font-inter mb-5 text-center lg:text-left px-2 sm:px-0">
-            At Trim & Proper, we believe every outdoor space deserves expert care and attention. Our
-            professional garden maintenance and hedge-cutting services are designed to keep your property
-            looking neat, healthy, and beautifully maintained all year round.
-          </p>
+            <div class="relative overflow-hidden rounded-xl aspect-[4/4] shadow-2xl">
+              <img src="./assests/images/about.webp" alt="Professional gardening"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-104">
 
-          <p class="text-[#616161] text-sm sm:text-[16px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
-            From precise lawn mowing and hedge trimming to complete garden upkeep, we provide reliable,
-            affordable solutions tailored to your needs. Whether it’s regular maintenance or a one-off
-            tidy-up, our experienced team ensures every job is completed with care and attention to detail.
-          </p>
+            </div>
 
-          <p class="text-[#616161] text-sm sm:text-[16px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
-            We take the hard work off your hands so you can simply enjoy a clean, well-kept outdoor space.
-            With Trim & Proper, your garden isn’t just maintained — it’s cared for properly.
-          </p>
+            <div class="absolute -top-6 -right-6 bg-[#399a32] p-8 hidden md:block shadow-2xl">
+              <p class="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-1">Established</p>
+              <p class="text-white text-3xl font-serif italic">Trust</p>
+            </div>
+          </div>
+        </div>
 
-          <p class="text-[#616161] text-sm sm:text-[18px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
-            Get in touch today and let us keep your garden looking its best.
-          </p>
+        <div class="w-full lg:w-1/2 order-1 lg:order-2">
+          <div class="flex items-center gap-3 mb-8">
+            <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+            <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">About Us</p>
 
-          <div class="flex justify-center lg:justify-start">
-            <button
-              class="bg-[#399a32] text-white px-6 py-3 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
+          </div>
+          <h2 class="text-[#141c14] text-5xl md:text-6xl font-serif tracking-tight mb-8">
+            Why Choose <br><span class="italic font-light text-[#399a32]">Trim & Proper</span>
+          </h2>
+
+
+          <div class="space-y-6 max-w-xl">
+            <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto  font-light leading-relaxed tracking-wide">
+              At Trim & Proper, we believe every outdoor space deserves expert care and attention. Our professional
+              garden maintenance and hedge-cutting services are designed to keep your property looking neat, healthy,
+              and beautifully maintained all year round.
+            </p>
+
+            <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
+              From precise lawn mowing and hedge trimming to complete garden upkeep, we provide reliable, affordable
+              solutions tailored to your needs. Whether it’s regular maintenance or a one-off tidy-up, our experienced
+              team ensures every job is completed with care and attention to detail.
+            </p>
+
+            <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
+              We take the hard work off your hands so you can simply enjoy a clean, well-kept outdoor space. With Trim &
+              Proper, your garden isn’t just maintained, it’s cared for properly.
+            </p>
+          </div>
+
+          <div class="mt-7  border-t border-black/10">
+            <p class="text-[#f7ae47] text-base italic font-serif my-7">Get in touch today and let us keep your garden
+              looking its best.</p>
+
+            <a href="#contact"
+              class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
               Request a Quote
-            </button>
+            </a>
           </div>
         </div>
 
-        <!-- Image Section -->
-        <div class="z-[1] w-full lg:w-1/2 flex justify-center lg:justify-end">
-          <div
-            class="w-[260px] sm:w-[320px] md:w-[380px] lg:w-[460px] xl:w-[600px] h-[260px] sm:h-[320px] md:h-[380px] lg:h-[460px] xl:h-[600px] overflow-hidden shadow-2xl">
-            <img src="./assests/images/about.png" alt="Smiling gardener working with plants"
-              class="w-full h-full object-cover">
-          </div>
-        </div>
       </div>
-    </div>
-
-    <!-- green text -->
-    <div
-      class="absolute top-[10%] sm:top-[5%] left-4 sm:left-10 lg:left-20 text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] font-Playfair text-[#F9F7F3] font-Meddon leading-none select-none pointer-events-none">
-      green
-    </div>
-
-    <!-- care text -->
-    <div
-      class="absolute bottom-[5%] right-4 sm:right-10 lg:right-[180px] xl:right-[230px] text-[80px] sm:text-[120px] md:text-[140px] lg:text-[150px] xl:text-[160px] font-Playfair text-[#F9F7F3] font-Meddon leading-none select-none pointer-events-none">
-      Gardens
     </div>
   </section>
 
@@ -172,20 +172,29 @@
   <!-- 3. services section start -->
   <section id="services" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <div class="overlay"></div>
-    <div class="container mx-auto relative px-2 sm:px-0 z-1">
-      <div class="flex flex-col items-center justify-center lg:w-[1140px] mx-auto mb-20">
-        <p class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
-          Our Services
-        </p>
 
-        <p
-          class="text-[#fff] text-2xl sm:text-3xl md:text-[42px] mb-2 font-Playfair text-center lg:text-left leading-snug">
-          What we Offer
-        </p>
+
+    <div class="absolute inset-0 z-0">
+      <img src="./assests/images/work/4.jpg" class="w-full h-full object-cover" alt="Garden background" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+    </div>
+
+    <div class="container mx-auto relative px-2 sm:px-0 z-1">
+      <div class="flex flex-col items-center justify-center mb-20">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+          <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">What we offer</p>
+          <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+        </div>
+
+
+        <h2 class="text-white text-5xl md:text-6xl font-serif tracking-tight mb-8">
+          Our <span class="italic font-light text-white">Services</span>
+        </h2>
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1140px] mx-auto text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-white">
         <!-- Service Card 1 -->
         <div class="relative text-center group">
           <div class="relative inline-block">
@@ -297,104 +306,108 @@
       </div>
 
     </div>
-    <!-- top right img -->
-    <div class="absolute -top-10 lg:top-[-40px] hidden md:block right-10 z-1 md:w-40 lg:w-60  opacity-10">
-      <img src="./assests/images/services_top.png" />
-    </div>
-
-    <!-- leaf left top -->
-    <div class="absolute top-[0] -left-40 md:left-0 opacity-5">
-      <img src="./assests/images/leaf.png" />
-    </div>
-    <!-- leaf right center -->
-    <div class="absolute bottom-[0%] -right-50 lg:right-[-100px] z-0  opacity-5">
-      <img class="w-70" src="./assests/images/leaf_02.png" />
-    </div>
   </section>
   <!-- 3. services section end -->
 
   <!-- 4. projects section start -->
 
-  <section id="our-work" class="p-5 lg:p-0">
-    <p class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] my-5 md:my-15 font-Playfair text-center leading-snug">
-      Garden Gallery
-    </p>
+  <section id="our-work" class="py-10 sm:py-16 md:py-24 lg:py-32 bg-[#fefaf0]">
+    <div class="container mx-auto px-6">
 
-    <div class="flex flex-col md:flex-row gap-6">
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/1.jpg" alt="Plants"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
+      <div class="flex flex-col items-center mb-16 md:mb-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-[1px] w-8 bg-[#399a32]/40"></div>
+          <p class="text-[#399a32] text-[10px] font-bold uppercase tracking-[0.6em]">Portfolio</p>
+          <div class="h-[1px] w-8 bg-[#399a32]/40"></div>
+        </div>
+        <h2 class="text-[#141c14] text-5xl md:text-6xl font-serif text-center tracking-tight">
+          Garden <span class="italic font-light text-[#399a32]">Gallery</span>
+        </h2>
+      </div>
+
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 md:auto-rows-[300px]">
+
+        <div
+          class="md:col-span-2 lg:col-span-6 lg:row-span-2 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/1.jpg" alt="Estate Maintenance"
+            class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            <p class="text-white text-[10px] uppercase tracking-widest font-bold">Estate Maintenance</p>
+          </div>
         </div>
 
+        <div
+          class="md:col-span-2 lg:col-span-3 lg:row-span-2 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/2.jpg" alt="Precision Pruning"
+            class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            <p class="text-white text-[10px] uppercase tracking-widest font-bold">Precision Pruning</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-3 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/3.jpg" alt="Garden Work"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-3 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/9.webp" alt="Garden Work"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-4 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/5.jpg" alt="Garden Work"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-4 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/6.webp" alt="Garden Work"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-4 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
+          onclick="openLightbox(this)">
+          <img src="./assests/images/work/7.jpg" alt="Garden Work"
+            class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+        </div>
 
       </div>
 
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/2.jpg" alt="For Home"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/3.jpg" alt="For Garden"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/4.jpg" alt="For Garden"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-      </div>
-    </div>
-
-    <div class="flex flex-col md:flex-row gap-6 mt-7">
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/5.jpg" alt="Plants"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/6.jpg" alt="For Home"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/7.jpg" alt="For Garden"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
-
-      </div>
-
-      <!-- Card -->
-      <div class="relative flex-1 min-h-[200px] sm:min-h-[300px] md:min-h-[350px] overflow-hidden group">
-        <div class="absolute inset-0 overflow-hidden">
-          <img src="./assests/images/work/8.jpg" alt="For Garden"
-            class="w-full h-[120%] object-cover transition-transform duration-700 ease-out group-hover:-translate-y-10" />
-        </div>
+      <div class="mt-16 text-center">
+        <a href="https://instagram.com" target="_blank"
+          class="text-[10px] uppercase tracking-[0.4em] font-bold text-[#141c14] border-b border-[#399a32] pb-2 hover:text-[#399a32] transition-colors">
+          View More On Instagram
+        </a>
       </div>
     </div>
   </section>
 
+  <div id="lightbox"
+    class="fixed inset-0 z-[10000] hidden bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 transition-all duration-300">
+    <button onclick="closeLightbox()"
+      class="absolute top-10 right-10 text-white text-4xl font-light hover:text-[#399a32] transition-colors">
+      &times;
+    </button>
+
+    <div class="max-w-6xl w-full h-full flex flex-col items-center justify-center">
+      <img id="lightbox-img" src="" alt=""
+        class="max-w-full max-h-[85vh] object-contain shadow-2xl transition-transform duration-500 scale-95" />
+      <p id="lightbox-caption" class="text-[#f7ae47] mt-6 uppercase tracking-[0.4em] text-xs font-bold"></p>
+    </div>
+  </div>
+
   <!-- 4. projects section end -->
 
   <!-- 5. reviews section start -->
+
   <section id="reviews" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <div class="container mx-auto relative px-2 sm:px-0 z-1">
       <div
@@ -447,51 +460,67 @@
   </section>
   <!-- 5. reviews section end -->
 
-  <!-- 6. contact beofre section end -->
-  <section class="relative h-[300px] md:h-[400px] flex flex-col justify-between">
-    <img src="./assests/images/work/5.jpg" class="video-background" />
-    <div class="overlay"></div>
-    <div id="hero-item" class="relative z-10 flex flex-col items-center justify-center flex-grow text-center px-4">
+  <!-- 6. contact before section -->
+  <section class="relative flex flex-col items-center justify-center overflow-hidden bg-[#0a120a]">
 
-      <p class="text-[#fff] text-2xl sm:text-3xl md:text-[55px] font-Playfair lg:text-center text-center mb-0 p-0">
-        Book a Consultation
+    <div class="absolute inset-0 z-0">
+      <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+    </div>
+
+
+    <div id="hero-item" class="relative z-10 w-full max-w-5xl px-6 text-center my-20">
+
+      <div class="inline-flex items-center gap-3 mb-10">
+        <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+        <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">
+          Consultation
+        </p>
+        <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+      </div>
+
+      <h1 class="text-white text-4xl md:text-6xl lg:text-8xl leading-[1.2] mb-10 font-serif tracking-tight">
+        Book a
+        <span class="italic font-light">Consultation</span>
+      </h1>
+
+      <p class="text-white/70 text-base md:text-base max-w-2xl mx-auto mb-16 font-light leading-relaxed tracking-wide">
+        Call today. Get an estimate.
+        Let’s get started on your dream garden.
       </p>
 
-      <p class="text-[#f7ae47] text-lg tracking-wide font-medium font-inter mt-5 mb-10 p-0">Call today. Get an estimate.
-        Get started.</p>
-
-      <div class="flex gap-5">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
         <a href="#contact"
-          class="bg-[#399a32] text-white px-6 py-4 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
+          class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
           Request a Quote
         </a>
 
-        <a href="mailto:james@trimandpropergardens.com"
-          class="border border-[#399a32] text-white px-6 py-4 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
-          Email Us
+        <a href="tel:+17703437971"
+          class="w-full md:w-auto border border-white/20 text-white/80 px-10 py-4 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[12px] font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
+          Call Now
         </a>
       </div>
-
     </div>
   </section>
-  <!-- 6. contact beofre section end -->
 
-  <!-- 7. Contact Us / Stay Connected Section -->
-  <section id="contact" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-[#fff]">
-    <div class="container mx-auto relative px-4 sm:px-6 lg:px-8 z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start max-w-[1140px] mx-auto">
-        <!-- Left: Contact Form -->
-        <div>
-          <p class="text-[#f7ae47] text-center lg:text-left text-base uppercase tracking-wide font-bold font-inter">
-            Stay Connected
-          </p>
-          <h3
-            class="text-[#141c14] text-2xl sm:text-3xl md:text-[30px] mb-2 font-Playfair text-center lg:text-left leading-snug">
-            Stay Connected with us for updates
-          </h3>
-          <p class="text-[#616161] text-sm sm:text-[14px] font-inter mb-10 text-center lg:text-left px-2 sm:px-0">
-            Send a quick note and we’ll get back to you within one working
-            day.
+  <!-- 7. contact section end -->
+  <section id="contact" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
+    <div class="container mx-auto relative px-6 z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-[1200px] mx-auto">
+
+        <div class="w-full">
+
+          <div class="flex items-center gap-3 mb-8">
+            <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
+            <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">Stay Connected</p>
+
+          </div>
+          <h2 class="text-[#141c14] text-4xl md:text-5xl font-serif tracking-tight mb-8">
+            Let’s start a <span class="italic font-light text-[#399a32]">conversation</span>
+          </h2>
+
+          <p class="text-[#616161] text-sm md:text-base font-light mb-12 max-w-md leading-relaxed">
+            Send a quick note and we’ll get back to you within one working day to discuss your project.
           </p>
 
           <form class="space-y-5">
@@ -526,80 +555,80 @@
               Request a Quote
             </button>
           </form>
-
         </div>
 
-        <!-- Right: Social Media Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <!-- Instagram -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           <a href="https://www.instagram.com/trimandpropergardens" target="_blank"
-            class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
-            <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
-              <i class="fab fa-instagram text-[#399a32] text-[30px]"></i>
+            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500 ">
+            <div class="bg-white h-8 w-8 flex justify-center items-center mb-6 rounded-sm shadow-sm">
+              <i class="fab fa-instagram text-[#399a32] text-2xl "></i>
             </div>
-
-            <div class="text-[#141c14] text-xl font-semibold mb-2">
-              Instagram
-            </div>
-            <p class="text-[#616161] text-[12px] mb-4">
+            <div class="text-[#141c14] text-xl font-serif mb-3 ">Instagram</div>
+            <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
               Plant inspirations and tips to keep your greenery thriving.
             </p>
             <button class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">
               Follow Us
             </button>
           </a>
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/people/Trim-Proper-Gardens/61582513563044" target="_blank"
-            class="bg-[#F8F5F0] p-6 rounded-md shadow-sm hover:shadow-lg transition">
-            <div class="bg-white h-10 w-10 flex justify-center items-center mb-2 rounded-md">
-              <i class="fa-brands fa-facebook-f text-[#399a32] text-[25px]"></i>
-            </div>
 
-            <div class="text-[#141c14] text-xl font-semibold mb-2">
-              Facebook
+          <a href="https://www.facebook.com/" target="_blank"
+            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500 ">
+            <div class="bg-white h-8 w-8 flex justify-center items-center mb-6 rounded-sm shadow-sm">
+              <i class="fa-brands fa-facebook-f text-[#399a32] text-xl "></i>
             </div>
-            <p class="text-[#616161] text-[12px] mb-4">
-              Latest updates and events that connect the Greenery community.
+            <div class="text-[#141c14] text-xl font-serif mb-3 ">Facebook</div>
+            <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
+              Latest updates and events that connect our community.
             </p>
-
             <button class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">
               Follow Us
             </button>
           </a>
-          <!-- Pinterest -->
-          <div class="bg-[#F8F5F0] rounded-md shadow-sm hover:shadow-lg transition">
-            <img src="./assests/images/work/3.jpg" class="w-full h-full" />
+
+          <div class="aspect-square overflow-hidden rounded-sm  transition-all duration-1000">
+            <img src="./assests/images/work/3.jpg" class="w-full h-full object-cover" />
           </div>
-
-          <!-- YouTube -->
-          <div class="bg-[#F8F5F0] rounded-md shadow-sm hover:shadow-lg transition">
-            <img src="./assests/images/work/1.jpg" class="w-full h-full" />
+          <div class="aspect-square overflow-hidden rounded-sm  transition-all duration-1000">
+            <img src="./assests/images/work/1.jpg" class="w-full h-full object-cover" />
           </div>
-
-
         </div>
       </div>
     </div>
-    <!-- Decorative leaf (bottom-right) -->
-    <img src="./assests/images/leaf-2.svg" alt="leaf decoration"
-      class="absolute bottom-0 right-0 opacity-20 w-[400px] hidden md:block" />
   </section>
 
   <!-- 8. Footer / Copyright Section -->
-  <footer class="bg-[#141c14] text-white py-6 text-center md:text-left relative">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
-      <p class="lg:pl-30">© Copyright 2025. All rights reserved.</p>
+  <footer class="bg-[#141c14] text-white py-6 overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <div>
+          <p class="text-[10px] text-white/30 uppercase tracking-widest text-right">© Copyright 2026. All rights
+            reserved.</p>
 
-      <div class="flex flex-col md:flex-row gap-2 md:gap-8 items-center mt-3 md:mt-0">
-        <div class="flex items-center gap-2">
-          <i class="fas fa-phone text-[#f7ae47]"></i>
-          <span>Contact Us At <strong>770-343-7971</strong></span>
         </div>
-        <div class="flex items-center gap-2">
-          <i class="fas fa-envelope text-[#f7ae47]"></i>
-          <span>james@trimandpropergardens.com</span>
+
+        <div class="flex flex-col md:flex-row gap-8 lg:gap-16">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center">
+              <i class="fas fa-phone text-[#f7ae47] text-sm"></i>
+            </div>
+            <div>
+              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">Call Us</p>
+              <p class="text-sm font-medium tracking-wide">770-343-7971</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center">
+              <i class="fas fa-envelope text-[#f7ae47] text-sm"></i>
+            </div>
+            <div>
+              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">Email Us</p>
+              <p class="text-sm font-medium tracking-wide">james@trimandpropergardens.com</p>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </footer>
 
@@ -703,6 +732,48 @@
           link.classList.add("active");
         }
       });
+    });
+
+
+    function openLightbox(element) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+
+      // Get the image source and alt text from the clicked card
+      const clickedImg = element.querySelector('img');
+      const imgSrc = clickedImg.getAttribute('src');
+      const imgAlt = clickedImg.getAttribute('alt');
+
+      // Update the lightbox content
+      lightboxImg.src = imgSrc;
+      lightboxCaption.textContent = imgAlt;
+
+      // Show the lightbox with a fade effect
+      lightbox.classList.remove('hidden');
+      setTimeout(() => {
+        lightboxImg.classList.remove('scale-95');
+        lightboxImg.classList.add('scale-100');
+      }, 10);
+
+      // Prevent scrolling on the main page while open
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+
+      lightboxImg.classList.add('scale-95');
+      lightbox.classList.add('hidden');
+
+      // Re-enable scrolling
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close on 'Esc' key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
     });
   </script>
 </body>
