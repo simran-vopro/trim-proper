@@ -22,59 +22,101 @@
 
     <div class="absolute inset-0 z-0">
       <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2]/70 to-[#0a120a]/90"></div>
     </div>
 
     <!-- Header start-->
-    <header class="absolute top-0 left-0 w-full z-[9999] pt-10 md:pt-5 px-6">
-      <nav class="max-w-[1400px] mx-auto flex items-center justify-between">
-
-        <div class="hidden md:flex items-center gap-10 lg:gap-16 flex-1 justify-end">
-          <a href="#hero-item"
-            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Home</a>
-          <a href="#about-us"
-            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">About
-            us</a>
-          <a href="#services"
-            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Services</a>
-        </div>
-
-        <div class="flex-shrink-0 mx-8 md:mx-16">
-          <a href="/" class="block transition-transform hover:scale-101">
+    <header class="absolute top-0 left-0 w-full z-[9999] pt-4 md:pt-5 px-4 sm:px-6">
+      <nav class="max-w-[1400px] mx-auto">
+        <div class="flex items-center justify-between lg:hidden">
+          <a href="/" class="block">
             <img src="./assests/images/logo_white.png" alt="Logo"
-              class="h-14 md:h-30 lg:h-40 object-contain brightness-110 rounded-xl shadow-2xl">
+              class="h-30 object-contain brightness-110 rounded-lg" />
           </a>
+          <button id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false"
+            class="h-11 w-11 flex items-center justify-center rounded-md bg-white/10 border border-white/20 text-white text-2xl">
+            &#9776;
+          </button>
         </div>
 
-        <div class="hidden md:flex items-center gap-10 lg:gap-16 flex-1">
-          <a href="#our-work"
-            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Our
-            Work</a>
-          <a href="#reviews"
-            class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Reviews</a>
-          <a href="#contact"
-            class="text-[10px] uppercase tracking-[0.4em] font-bold text-[#f7ae47] hover:brightness-125 transition-all">Contact
-            us</a>
-        </div>
+        <div class="hidden lg:flex items-center justify-between">
+          <ul class="flex items-center gap-10 lg:gap-16 flex-1 justify-end">
+            <li class="menu-item"><a data-menu-link href="#hero-item"
+                class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Home</a>
+            </li>
+            <li class="menu-item"><a data-menu-link href="#about-us"
+                class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">About
+                us</a></li>
+            <li class="menu-item"><a data-menu-link href="#services"
+                class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Services</a>
+            </li>
+          </ul>
 
-        <div class="md:hidden">
-          <button id="mobileMenuBtn" class="text-3xl text-white/80">&#9776;</button>
+          <div class="flex-shrink-0 mx-8 md:mx-16">
+            <a href="/" class="block transition-transform hover:scale-101">
+              <img src="./assests/images/logo_white.png" alt="Logo"
+                class="h-30 md:h-30 lg:h-40 object-contain brightness-110 rounded-xl shadow-2xl">
+            </a>
+          </div>
+
+          <ul class="flex items-center gap-10 lg:gap-16 flex-1">
+            <li class="menu-item"><a data-menu-link href="#our-work"
+                class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Our
+                Work</a></li>
+            <li class="menu-item"><a data-menu-link href="#reviews"
+                class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Reviews</a>
+            </li>
+            <li class="menu-item"><a data-menu-link href="#contact"
+                class="text-[10px] uppercase tracking-[0.4em] font-bold text-[#f7ae47] hover:brightness-125 transition-all">Contact
+                us</a></li>
+          </ul>
         </div>
       </nav>
     </header>
+
+    <div id="mobileMenu" class="fixed inset-0 z-[10001] hidden lg:hidden">
+      <button id="mobileMenuBackdrop" aria-label="Close menu" class="absolute inset-0 bg-black/60"></button>
+      <div
+        class="mobile-menu-panel absolute top-0 right-0 h-full w-[82%] max-w-sm bg-[#141c14] text-white p-6 shadow-2xl">
+        <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-5">
+          <p class="uppercase tracking-[0.3em] text-[11px] text-white/70">Menu</p>
+          <button id="close" aria-label="Close menu"
+            class="h-10 w-10 flex items-center justify-center rounded-md border border-white/20 text-2xl">&times;</button>
+        </div>
+        <ul class="flex flex-col gap-2">
+          <li><a data-menu-link
+              class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
+              href="#hero-item">Home</a></li>
+          <li><a data-menu-link
+              class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
+              href="#about-us">About us</a></li>
+          <li><a data-menu-link
+              class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
+              href="#services">Services</a></li>
+          <li><a data-menu-link
+              class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
+              href="#our-work">Our work</a></li>
+          <li><a data-menu-link
+              class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
+              href="#reviews">Reviews</a></li>
+          <li><a data-menu-link class="block py-3 text-sm uppercase tracking-[0.2em] text-[#f7ae47] font-semibold"
+              href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Header end-->
 
-    <div id="hero-item" class="relative z-10 w-full max-w-5xl px-6 text-center my-20 md:mt-60">
+    <div id="hero-item" class="relative z-10 w-full max-w-5xl px-4 sm:px-6 text-center pt-35 pb-20 md:pt-60 md:pb-28">
 
       <div class="inline-flex items-center gap-3 mb-10">
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-        <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">
+        <p class="section-kicker text-[#f7ae47]">
           Trim & Proper Gardens
         </p>
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
       </div>
 
-      <h1 class="text-white text-4xl md:text-6xl lg:text-8xl leading-[1.2] mb-10 font-serif tracking-tight">
+      <h1 class="hero-title text-white mb-10">
         Considered Care for <br>
         <span class="italic font-light">Beautiful Gardens That Thrive.</span>
       </h1>
@@ -84,14 +126,14 @@
         only thing you should be pruning is your to-do list.
       </p>
 
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div class="flex flex-row justify-center items-center gap-3 sm:gap-5">
         <a href="#contact"
-          class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
+          class="w-auto whitespace-nowrap bg-green-700 text-white px-4 sm:px-8 py-3 rounded-sm hover:bg-green-600 transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] shadow-xl">
           Request a Quote
         </a>
 
         <a href="tel:+17703437971"
-          class="w-full md:w-auto border border-white/20 text-white/80 px-10 py-4 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[12px] font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
+          class="w-auto whitespace-nowrap border border-white/20 text-white/80 px-4 sm:px-8 py-3 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] backdrop-blur-sm">
           Call Now
         </a>
       </div>
@@ -99,8 +141,8 @@
   </section>
 
   <!-- 2. About us section start -->
-  <section id="about-us" class="relative py-10 sm:py-16 md:py-24 lg:py-32 bg-[#fff] overflow-hidden">
-    <div class="container mx-auto px-6 relative z-10">
+  <section id="about-us" class="relative py-14 sm:py-16 md:py-24 lg:py-32 bg-[#fff] overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 relative z-10">
       <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
         <div class="w-full lg:w-1/2 order-2 lg:order-1">
@@ -125,10 +167,10 @@
         <div class="w-full lg:w-1/2 order-1 lg:order-2">
           <div class="flex items-center gap-3 mb-8">
             <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-            <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">About Us</p>
+            <p class="section-kicker text-[#f7ae47]">About Us</p>
 
           </div>
-          <h2 class="text-[#141c14] text-5xl md:text-6xl font-serif tracking-tight mb-8">
+          <h2 class="section-title text-[#141c14] mb-8">
             Why Choose <br><span class="italic font-light text-[#399a32]">Trim & Proper</span>
           </h2>
 
@@ -157,7 +199,7 @@
               looking its best.</p>
 
             <a href="#contact"
-              class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
+              class="w-auto whitespace-nowrap bg-green-700 text-white px-4 sm:px-8 py-3 rounded-sm hover:bg-green-600 transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] shadow-xl">
               Request a Quote
             </a>
           </div>
@@ -170,31 +212,31 @@
   <!-- 2. About us section end -->
 
   <!-- 3. services section start -->
-  <section id="services" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+  <section id="services" class="relative py-14 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <div class="overlay"></div>
 
 
     <div class="absolute inset-0 z-0">
       <img src="./assests/images/work/4.jpg" class="w-full h-full object-cover" alt="Garden background" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#141c14c2]/70 to-[#141c14c2]/90"></div>
     </div>
 
-    <div class="container mx-auto relative px-2 sm:px-0 z-1">
+    <div class="container mx-auto relative px-4 sm:px-6 z-1">
       <div class="flex flex-col items-center justify-center mb-20">
         <div class="flex items-center gap-3 mb-8">
           <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-          <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">What we offer</p>
+          <p class="section-kicker text-[#f7ae47]">What we offer</p>
           <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
         </div>
 
 
-        <h2 class="text-white text-5xl md:text-6xl font-serif tracking-tight mb-8">
+        <h2 class="section-title text-white mb-8">
           Our <span class="italic font-light text-white">Services</span>
         </h2>
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 text-white">
         <!-- Service Card 1 -->
         <div class="relative text-center group">
           <div class="relative inline-block">
@@ -311,16 +353,16 @@
 
   <!-- 4. projects section start -->
 
-  <section id="our-work" class="py-10 sm:py-16 md:py-24 lg:py-32 bg-[#fefaf0]">
-    <div class="container mx-auto px-6">
+  <section id="our-work" class="py-14 sm:py-16 md:py-24 lg:py-32 bg-[#fefaf0]">
+    <div class="container mx-auto px-4 sm:px-6">
 
       <div class="flex flex-col items-center mb-16 md:mb-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="h-[1px] w-8 bg-[#399a32]/40"></div>
-          <p class="text-[#399a32] text-[10px] font-bold uppercase tracking-[0.6em]">Portfolio</p>
+          <p class="section-kicker text-[#399a32]">Portfolio</p>
           <div class="h-[1px] w-8 bg-[#399a32]/40"></div>
         </div>
-        <h2 class="text-[#141c14] text-5xl md:text-6xl font-serif text-center tracking-tight">
+        <h2 class="section-title text-[#141c14] text-center">
           Garden <span class="italic font-light text-[#399a32]">Gallery</span>
         </h2>
       </div>
@@ -408,18 +450,17 @@
 
   <!-- 5. reviews section start -->
 
-  <section id="reviews" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
-    <div class="container mx-auto relative px-2 sm:px-0 z-1">
+  <section id="reviews" class="relative py-14 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+    <div class="container mx-auto relative px-4 sm:px-6 z-1">
       <div
-        class="flex flex-col items-center justify-center mx-auto bg-[#F8F5F0] lg:w-150 h-100 lg:h-150 md:rounded-full relative">
-        <p class="text-[#f7ae47] text-sm sm:text-base mb-2 uppercase tracking-wide font-inter text-center lg:text-left">
+        class="flex flex-col items-center justify-center mx-auto w-full max-w-[980px] bg-[#F8F5F0] min-h-[420px] p-8 sm:p-10 md:p-14 lg:w-[620px] lg:h-[620px] lg:min-h-0 lg:rounded-full relative">
+        <p class="section-kicker text-[#f7ae47] mb-2 text-center lg:text-left">
           Testimonials
         </p>
 
-        <p
-          class="text-[#141c14] text-2xl sm:text-3xl md:text-[42px] mb-2 font-Playfair text-center lg:text-left leading-snug">
-          What Clients Say
-        </p>
+        <h2 class="section-title text-[#141c14] mb-2 text-center lg:text-left leading-snug">
+          Client <span class="italic font-light text-[#399a32]">Reviews</span>
+        </h2>
 
         <div class="flex justify-center items-center w-[95%] lg:w-[60%] text-center">
           <div class="swiper-button bg-green-500 rounded-full swiper-button-prev -left-20"></div>
@@ -465,21 +506,21 @@
 
     <div class="absolute inset-0 z-0">
       <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#0a120a]/70 to-[#0a120a]/90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2]/70 to-[#0a120a]/90"></div>
     </div>
 
 
-    <div id="hero-item" class="relative z-10 w-full max-w-5xl px-6 text-center my-20">
+    <div id="consultation" class="relative z-10 w-full max-w-5xl px-4 sm:px-6 text-center py-20 md:py-24">
 
       <div class="inline-flex items-center gap-3 mb-10">
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-        <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">
+        <p class="section-kicker text-[#f7ae47]">
           Consultation
         </p>
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
       </div>
 
-      <h1 class="text-white text-4xl md:text-6xl lg:text-8xl leading-[1.2] mb-10 font-serif tracking-tight">
+      <h1 class="hero-title text-white mb-10">
         Book a
         <span class="italic font-light">Consultation</span>
       </h1>
@@ -489,14 +530,14 @@
         Let’s get started on your dream garden.
       </p>
 
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div class="flex flex-row justify-center items-center gap-3 sm:gap-5">
         <a href="#contact"
-          class="w-full md:w-auto bg-green-700 text-white px-10 py-4 rounded-sm hover:bg-green-600 transition-all duration-300 text-[12px] font-bold uppercase tracking-[0.2em] shadow-xl">
+          class="w-auto whitespace-nowrap bg-green-700 text-white px-4 sm:px-8 py-3 rounded-sm hover:bg-green-600 transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] shadow-xl">
           Request a Quote
         </a>
 
         <a href="tel:+17703437971"
-          class="w-full md:w-auto border border-white/20 text-white/80 px-10 py-4 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[12px] font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
+          class="w-auto whitespace-nowrap border border-white/20 text-white/80 px-4 sm:px-8 py-3 rounded-sm hover:bg-white hover:text-black transition-all duration-500 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] backdrop-blur-sm">
           Call Now
         </a>
       </div>
@@ -504,18 +545,18 @@
   </section>
 
   <!-- 7. contact section end -->
-  <section id="contact" class="relative py-10 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
-    <div class="container mx-auto relative px-6 z-10">
+  <section id="contact" class="relative py-14 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
+    <div class="container mx-auto relative px-4 sm:px-6 z-10">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-[1200px] mx-auto">
 
         <div class="w-full">
 
           <div class="flex items-center gap-3 mb-8">
             <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-            <p class="text-[#f7ae47] text-[10px] font-bold uppercase tracking-[0.6em]">Stay Connected</p>
+            <p class="section-kicker text-[#f7ae47]">Stay Connected</p>
 
           </div>
-          <h2 class="text-[#141c14] text-4xl md:text-5xl font-serif tracking-tight mb-8">
+          <h2 class="section-title text-[#141c14] mb-8">
             Let’s start a <span class="italic font-light text-[#399a32]">conversation</span>
           </h2>
 
@@ -551,7 +592,7 @@
             </div>
 
             <button
-              class="bg-[#399a32] text-white px-6 py-3 hover:bg-green-700 transition duration-300 font-inter text-sm sm:text-base">
+              class="w-auto whitespace-nowrap bg-green-700 text-white px-4 sm:px-8 py-3 rounded-sm hover:bg-green-600 transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] shadow-xl">
               Request a Quote
             </button>
           </form>
@@ -567,7 +608,8 @@
             <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
               Plant inspirations and tips to keep your greenery thriving.
             </p>
-            <button class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">
+            <button
+              class="w-full bg-[#141c14] text-white px-4 sm:px-6 py-3 rounded-sm hover:bg-[#399a32] transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em]">
               Follow Us
             </button>
           </a>
@@ -581,7 +623,8 @@
             <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
               Latest updates and events that connect our community.
             </p>
-            <button class="bg-[#141c14] text-white text-sm px-5 py-2 rounded hover:bg-[#399a32] transition w-[100%]">
+            <button
+              class="w-full bg-[#141c14] text-white px-4 sm:px-6 py-3 rounded-sm hover:bg-[#399a32] transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em]">
               Follow Us
             </button>
           </a>
@@ -663,14 +706,27 @@
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     const closeMenu = document.getElementById("close");
+    const mobileMenuBackdrop = document.getElementById("mobileMenuBackdrop");
+    const mobileMenuLinks = document.querySelectorAll('#mobileMenu a[data-menu-link]');
 
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+    const openMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+      if (mobileMenuBtn) mobileMenuBtn.setAttribute("aria-expanded", "true");
+    };
 
-    closeMenu.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+    const closeMobileMenu = () => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.add("hidden");
+      document.body.style.overflow = "auto";
+      if (mobileMenuBtn) mobileMenuBtn.setAttribute("aria-expanded", "false");
+    };
+
+    mobileMenuBtn?.addEventListener("click", openMobileMenu);
+    closeMenu?.addEventListener("click", closeMobileMenu);
+    mobileMenuBackdrop?.addEventListener("click", closeMobileMenu);
+    mobileMenuLinks.forEach((link) => link.addEventListener("click", closeMobileMenu));
   </script>
 
   <script>
@@ -712,7 +768,7 @@
 
   <script>
     const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".menu-item");
+    const navLinks = document.querySelectorAll("[data-menu-link]");
 
     window.addEventListener("scroll", () => {
       let current = "";
@@ -726,10 +782,11 @@
       });
 
       navLinks.forEach((link) => {
-        link.classList.remove("active");
-        const href = link.querySelector("a")?.getAttribute("href");
+        const desktopMenuItem = link.closest(".menu-item");
+        desktopMenuItem?.classList.remove("active");
+        const href = link.getAttribute("href");
         if (href === "#" + current) {
-          link.classList.add("active");
+          desktopMenuItem?.classList.add("active");
         }
       });
     });
