@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -19,7 +19,6 @@
 
 <body class="font-inter">
   <section class="relative flex flex-col items-center justify-center overflow-hidden bg-[#0a120a]">
-
     <div class="absolute inset-0 z-0">
       <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
       <div class="absolute inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2]/70 to-[#0a120a]/90"></div>
@@ -41,13 +40,17 @@
 
         <div class="hidden lg:flex items-center justify-between">
           <ul class="flex items-center gap-10 lg:gap-16 flex-1 justify-end">
-            <li class="menu-item"><a data-menu-link href="#hero-item"
+            <li class="menu-item">
+              <a data-menu-link href="#hero-item"
                 class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Home</a>
             </li>
-            <li class="menu-item"><a data-menu-link href="#about-us"
+            <li class="menu-item">
+              <a data-menu-link href="#about-us"
                 class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">About
-                us</a></li>
-            <li class="menu-item"><a data-menu-link href="#services"
+                us</a>
+            </li>
+            <li class="menu-item">
+              <a data-menu-link href="#services"
                 class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Services</a>
             </li>
           </ul>
@@ -55,20 +58,25 @@
           <div class="flex-shrink-0 mx-8 md:mx-16">
             <a href="/" class="block transition-transform hover:scale-101">
               <img src="./assests/images/logo_white.png" alt="Logo"
-                class="h-30 md:h-30 lg:h-40 object-contain brightness-110 rounded-xl shadow-2xl">
+                class="h-30 md:h-30 lg:h-40 object-contain brightness-110 rounded-xl shadow-2xl" />
             </a>
           </div>
 
           <ul class="flex items-center gap-10 lg:gap-16 flex-1">
-            <li class="menu-item"><a data-menu-link href="#our-work"
+            <li class="menu-item">
+              <a data-menu-link href="#our-work"
                 class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Our
-                Work</a></li>
-            <li class="menu-item"><a data-menu-link href="#reviews"
+                Work</a>
+            </li>
+            <li class="menu-item">
+              <a data-menu-link href="#reviews"
                 class="text-[10px] uppercase tracking-[0.4em] font-medium text-white/80 hover:text-white transition-all">Reviews</a>
             </li>
-            <li class="menu-item"><a data-menu-link href="#contact"
+            <li class="menu-item">
+              <a data-menu-link href="#contact"
                 class="text-[10px] uppercase tracking-[0.4em] font-bold text-[#f7ae47] hover:brightness-125 transition-all">Contact
-                us</a></li>
+                us</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -79,51 +87,65 @@
       <div
         class="mobile-menu-panel absolute top-0 right-0 h-full w-[82%] max-w-sm bg-[#141c14] text-white p-6 shadow-2xl">
         <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-5">
-          <p class="uppercase tracking-[0.3em] text-[11px] text-white/70">Menu</p>
+          <p class="uppercase tracking-[0.3em] text-[11px] text-white/70">
+            Menu
+          </p>
           <button id="close" aria-label="Close menu"
-            class="h-10 w-10 flex items-center justify-center rounded-md border border-white/20 text-2xl">&times;</button>
+            class="h-10 w-10 flex items-center justify-center rounded-md border border-white/20 text-2xl">
+            &times;
+          </button>
         </div>
         <ul class="flex flex-col gap-2">
-          <li><a data-menu-link
+          <li>
+            <a data-menu-link
               class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
-              href="#hero-item">Home</a></li>
-          <li><a data-menu-link
+              href="#hero-item">Home</a>
+          </li>
+          <li>
+            <a data-menu-link
               class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
-              href="#about-us">About us</a></li>
-          <li><a data-menu-link
+              href="#about-us">About us</a>
+          </li>
+          <li>
+            <a data-menu-link
               class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
-              href="#services">Services</a></li>
-          <li><a data-menu-link
+              href="#services">Services</a>
+          </li>
+          <li>
+            <a data-menu-link
               class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
-              href="#our-work">Our work</a></li>
-          <li><a data-menu-link
+              href="#our-work">Our work</a>
+          </li>
+          <li>
+            <a data-menu-link
               class="block py-3 text-sm uppercase tracking-[0.2em] border-b border-white/10 text-white/90"
-              href="#reviews">Reviews</a></li>
-          <li><a data-menu-link class="block py-3 text-sm uppercase tracking-[0.2em] text-[#f7ae47] font-semibold"
-              href="#contact">Contact us</a></li>
+              href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a data-menu-link class="block py-3 text-sm uppercase tracking-[0.2em] text-[#f7ae47] font-semibold"
+              href="#contact">Contact us</a>
+          </li>
         </ul>
       </div>
     </div>
     <!-- Header end-->
 
     <div id="hero-item" class="relative z-10 w-full max-w-5xl px-4 sm:px-6 text-center pt-35 pb-20 md:pt-60 md:pb-28">
-
       <div class="inline-flex items-center gap-3 mb-10">
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-        <p class="section-kicker text-[#f7ae47]">
-          Trim & Proper Gardens
-        </p>
+        <p class="section-kicker text-[#f7ae47]">Trim & Proper Gardens</p>
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
       </div>
 
       <h1 class="hero-title text-white mb-10">
-        Considered Care for <br>
+        Considered Care for <br />
         <span class="italic font-light">Beautiful Gardens That Thrive.</span>
       </h1>
 
       <p class="text-white/70 text-base md:text-base max-w-2xl mx-auto mb-16 font-light leading-relaxed tracking-wide">
-        Expert maintenance, pruning, planting, and seasonal tidy-ups across domestic and commercial spaces, because the
-        only thing you should be pruning is your to-do list.
+        Expert maintenance, pruning, planting, and seasonal tidy-ups across
+        domestic and commercial spaces, because the only thing you should be
+        pruning is your to-do list.
       </p>
 
       <div class="flex flex-row justify-center items-center gap-3 sm:gap-5">
@@ -144,7 +166,6 @@
   <section id="about-us" class="relative py-14 sm:py-16 md:py-24 lg:py-32 bg-[#fff] overflow-hidden">
     <div class="container mx-auto px-4 sm:px-6 relative z-10">
       <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-
         <div class="w-full lg:w-1/2 order-2 lg:order-1">
           <div class="relative group">
             <div
@@ -153,12 +174,13 @@
 
             <div class="relative overflow-hidden rounded-xl aspect-[4/4] shadow-2xl">
               <img src="./assests/images/about.webp" alt="Professional gardening"
-                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-104">
-
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-104" />
             </div>
 
             <div class="absolute -top-6 -right-6 bg-[#399a32] p-8 hidden md:block shadow-2xl">
-              <p class="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-1">Established</p>
+              <p class="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-1">
+                Established
+              </p>
               <p class="text-white text-3xl font-serif italic">Trust</p>
             </div>
           </div>
@@ -168,35 +190,39 @@
           <div class="flex items-center gap-3 mb-8">
             <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
             <p class="section-kicker text-[#f7ae47]">About Us</p>
-
           </div>
           <h2 class="section-title text-[#141c14] mb-8">
-            Why Choose <br><span class="italic font-light text-[#399a32]">Trim & Proper</span>
+            Why Choose <br /><span class="italic font-light text-[#399a32]">Trim & Proper</span>
           </h2>
 
-
           <div class="space-y-6 max-w-xl">
-            <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto  font-light leading-relaxed tracking-wide">
-              At Trim & Proper, we believe every outdoor space deserves expert care and attention. Our professional
-              garden maintenance and hedge-cutting services are designed to keep your property looking neat, healthy,
-              and beautifully maintained all year round.
+            <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
+              At Trim & Proper, we believe every outdoor space deserves expert
+              care and attention. Our professional garden maintenance and
+              hedge-cutting services are designed to keep your property
+              looking neat, healthy, and beautifully maintained all year
+              round.
             </p>
 
             <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
-              From precise lawn mowing and hedge trimming to complete garden upkeep, we provide reliable, affordable
-              solutions tailored to your needs. Whether it’s regular maintenance or a one-off tidy-up, our experienced
-              team ensures every job is completed with care and attention to detail.
+              From precise lawn mowing and hedge trimming to complete garden
+              upkeep, we provide reliable, affordable solutions tailored to
+              your needs. Whether it’s regular maintenance or a one-off
+              tidy-up, our experienced team ensures every job is completed
+              with care and attention to detail.
             </p>
 
             <p class="text-black/80 text-base md:text-base max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
-              We take the hard work off your hands so you can simply enjoy a clean, well-kept outdoor space. With Trim &
-              Proper, your garden isn’t just maintained, it’s cared for properly.
+              We take the hard work off your hands so you can simply enjoy a
+              clean, well-kept outdoor space. With Trim & Proper, your garden
+              isn’t just maintained, it’s cared for properly.
             </p>
           </div>
 
-          <div class="mt-7  border-t border-black/10">
-            <p class="text-[#f7ae47] text-base italic font-serif my-7">Get in touch today and let us keep your garden
-              looking its best.</p>
+          <div class="mt-7 border-t border-black/10">
+            <p class="text-[#f7ae47] text-base italic font-serif my-7">
+              Get in touch today and let us keep your garden looking its best.
+            </p>
 
             <a href="#contact"
               class="w-auto whitespace-nowrap bg-green-700 text-white px-4 sm:px-8 py-3 rounded-sm hover:bg-green-600 transition-all duration-300 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] shadow-xl">
@@ -204,7 +230,6 @@
             </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -215,10 +240,14 @@
   <section id="services" class="relative py-14 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <div class="overlay"></div>
 
-
     <div class="absolute inset-0 z-0">
-      <img src="./assests/images/work/4.jpg" class="w-full h-full object-cover" alt="Garden background" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0a120a] via-[#141c14c2]/70 to-[#141c14c2]/90"></div>
+      <img src="./assests/images/bg.jpg"
+        class="hidden lg:block w-full h-full object-cover object-center md:object-center-center"
+        alt="Garden background" />
+      <img src="./assests/images/bg-mobile.jpg"
+        class="block lg:hidden w-full h-full object-cover object-center md:object-center-center"
+        alt="Garden background" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2] to-[#0a120a]/90"></div>
     </div>
 
     <div class="container mx-auto relative px-4 sm:px-6 z-1">
@@ -229,14 +258,13 @@
           <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
         </div>
 
-
         <h2 class="section-title text-white mb-8">
           Our <span class="italic font-light text-white">Services</span>
         </h2>
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-10 text-white">
         <!-- Service Card 1 -->
         <div class="relative text-center group">
           <div class="relative inline-block">
@@ -251,15 +279,17 @@
             <!-- Number Badge -->
             <div
               class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
-              01</div>
+              01
+            </div>
           </div>
           <div class="mt-8">
-            <h3 class="text-lg font-semibold mb-2">Regular Garden Maintenance</h3>
+            <h3 class="text-lg font-semibold mb-2">
+              Regular Garden Maintenance
+            </h3>
             <p class="text-gray-300 text-sm mb-3">
-              Our Regular Garden Maintenance includes lawn care, weeding, edging, and seasonal tidy-ups to
-              keep your garden neat and tidy.
+              Our Regular Garden Maintenance includes lawn care, weeding,
+              edging, and seasonal tidy-ups to keep your garden neat and tidy.
             </p>
-
           </div>
         </div>
 
@@ -276,7 +306,7 @@
 
             <!-- Number Badge -->
             <div
-              class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+              class="absolute -top-0 -right-0 lg:-left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
               02
             </div>
           </div>
@@ -331,7 +361,7 @@
 
             <!-- Number Badge -->
             <div
-              class="absolute -top-0 -left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
+              class="absolute -top-0 -right-0 lg:-left-0 bg-[#FBB03B] text-white font-Meddon w-12 h-12 flex items-center justify-center rounded-full shadow-md z-2 transition-transform duration-700 ease-out group-hover:-translate-y-2">
               04
             </div>
           </div>
@@ -346,7 +376,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <!-- 3. services section end -->
@@ -355,7 +384,6 @@
 
   <section id="our-work" class="py-14 sm:py-16 md:py-24 lg:py-32 bg-[#fefaf0]">
     <div class="container mx-auto px-4 sm:px-6">
-
       <div class="flex flex-col items-center mb-16 md:mb-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="h-[1px] w-8 bg-[#399a32]/40"></div>
@@ -368,7 +396,6 @@
       </div>
 
       <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 md:auto-rows-[300px]">
-
         <div
           class="md:col-span-2 lg:col-span-6 lg:row-span-2 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
           onclick="openLightbox(this)">
@@ -376,7 +403,9 @@
             class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-            <p class="text-white text-[10px] uppercase tracking-widest font-bold">Estate Maintenance</p>
+            <p class="text-white text-[10px] uppercase tracking-widest font-bold">
+              Estate Maintenance
+            </p>
           </div>
         </div>
 
@@ -387,19 +416,21 @@
             class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-            <p class="text-white text-[10px] uppercase tracking-widest font-bold">Precision Pruning</p>
+            <p class="text-white text-[10px] uppercase tracking-widest font-bold">
+              Precision Pruning
+            </p>
           </div>
         </div>
 
         <div class="md:col-span-2 lg:col-span-3 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
           onclick="openLightbox(this)">
-          <img src="./assests/images/work/3.jpg" alt="Garden Work"
+          <img src="./assests/images/work/10.png" alt="Before & After Garden Work"
             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
         </div>
 
         <div class="md:col-span-2 lg:col-span-3 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
           onclick="openLightbox(this)">
-          <img src="./assests/images/work/9.webp" alt="Garden Work"
+          <img src="./assests/images/work/9.png" alt="Garden Work"
             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
         </div>
 
@@ -417,10 +448,9 @@
 
         <div class="md:col-span-2 lg:col-span-4 relative overflow-hidden group rounded-sm shadow-sm cursor-zoom-in"
           onclick="openLightbox(this)">
-          <img src="./assests/images/work/7.jpg" alt="Garden Work"
+          <img src="./assests/images/work/7.png" alt="Garden Work"
             class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
         </div>
-
       </div>
 
       <div class="mt-16 text-center">
@@ -470,26 +500,27 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “Professional, reliable, and extremely detail-oriented. The team was helpful from start to finish and
-                  delivered exactly what they promised. Highly recommended!”
+                  “Professional, reliable, and extremely detail-oriented. The
+                  team was helpful from start to finish and delivered exactly
+                  what they promised. Highly recommended!”
                 </p>
-
-
               </div>
 
               <div class="swiper-slide">
                 <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “We use them for regular garden maintenance and the difference is amazing. The lawn is always neat,
-                  weeds are kept under control, and everything looks tidy year-round without us having to worry.”
+                  “We use them for regular garden maintenance and the
+                  difference is amazing. The lawn is always neat, weeds are
+                  kept under control, and everything looks tidy year-round
+                  without us having to worry.”
                 </p>
-
-
               </div>
 
               <div class="swiper-slide">
                 <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “They helped redesign parts of our garden and handled all the planting and pruning beautifully. The
-                  garden now has colour and structure throughout the year. Very knowledgeable and creative team.”
+                  “They helped redesign parts of our garden and handled all
+                  the planting and pruning beautifully. The garden now has
+                  colour and structure throughout the year. Very knowledgeable
+                  and creative team.”
                 </p>
               </div>
             </div>
@@ -503,20 +534,18 @@
 
   <!-- 6. contact before section -->
   <section class="relative flex flex-col items-center justify-center overflow-hidden bg-[#0a120a]">
-
     <div class="absolute inset-0 z-0">
-      <img src="./assests/images/b3.jpg" class="w-full h-full object-cover" alt="Garden background" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2]/70 to-[#0a120a]/90"></div>
+      <img src="./assests/images/contact_bg.jpg" class="hidden lg:block w-full h-full object-cover"
+        alt="Garden background" />
+      <img src="./assests/images/b3.jpg" class="lg:hidden w-full h-full object-cover" alt="Garden background" />
+      <div class="absolute lg:hidden inset-0 bg-gradient-to-t from-[#141c14c2] via-[#141c14c2]/70 to-[#0a120a]/90">
+      </div>
     </div>
 
-
     <div id="consultation" class="relative z-10 w-full max-w-5xl px-4 sm:px-6 text-center py-20 md:py-24">
-
       <div class="inline-flex items-center gap-3 mb-10">
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
-        <p class="section-kicker text-[#f7ae47]">
-          Consultation
-        </p>
+        <p class="section-kicker text-[#f7ae47]">Consultation</p>
         <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
       </div>
 
@@ -526,8 +555,7 @@
       </h1>
 
       <p class="text-white/70 text-base md:text-base max-w-2xl mx-auto mb-16 font-light leading-relaxed tracking-wide">
-        Call today. Get an estimate.
-        Let’s get started on your dream garden.
+        Call today. Get an estimate. Let’s get started on your dream garden.
       </p>
 
       <div class="flex flex-row justify-center items-center gap-3 sm:gap-5">
@@ -548,20 +576,19 @@
   <section id="contact" class="relative py-14 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
     <div class="container mx-auto relative px-4 sm:px-6 z-10">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-[1200px] mx-auto">
-
         <div class="w-full">
-
           <div class="flex items-center gap-3 mb-8">
             <div class="h-[1px] w-8 bg-[#f7ae47]/40"></div>
             <p class="section-kicker text-[#f7ae47]">Stay Connected</p>
-
           </div>
           <h2 class="section-title text-[#141c14] mb-8">
-            Let’s start a <span class="italic font-light text-[#399a32]">conversation</span>
+            Let’s start a
+            <span class="italic font-light text-[#399a32]">conversation</span>
           </h2>
 
           <p class="text-[#616161] text-sm md:text-base font-light mb-12 max-w-md leading-relaxed">
-            Send a quick note and we’ll get back to you within one working day to discuss your project.
+            Send a quick note and we’ll get back to you within one working day
+            to discuss your project.
           </p>
 
           <form class="space-y-5">
@@ -600,12 +627,14 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           <a href="https://www.instagram.com/trimandpropergardens" target="_blank"
-            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500 ">
+            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500">
             <div class="bg-white h-8 w-8 flex justify-center items-center mb-6 rounded-sm shadow-sm">
-              <i class="fab fa-instagram text-[#399a32] text-2xl "></i>
+              <i class="fab fa-instagram text-[#399a32] text-2xl"></i>
             </div>
-            <div class="text-[#141c14] text-xl font-serif mb-3 ">Instagram</div>
-            <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
+            <div class="text-[#141c14] text-xl font-serif mb-3">
+              Instagram
+            </div>
+            <p class="text-[#616161] text-[12px] leading-relaxed mb-6">
               Plant inspirations and tips to keep your greenery thriving.
             </p>
             <button
@@ -615,12 +644,12 @@
           </a>
 
           <a href="https://www.facebook.com/" target="_blank"
-            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500 ">
+            class="group bg-[#F8F5F0] p-5 rounded-sm transition-all duration-500">
             <div class="bg-white h-8 w-8 flex justify-center items-center mb-6 rounded-sm shadow-sm">
-              <i class="fa-brands fa-facebook-f text-[#399a32] text-xl "></i>
+              <i class="fa-brands fa-facebook-f text-[#399a32] text-xl"></i>
             </div>
-            <div class="text-[#141c14] text-xl font-serif mb-3 ">Facebook</div>
-            <p class="text-[#616161] text-[12px] leading-relaxed mb-6 ">
+            <div class="text-[#141c14] text-xl font-serif mb-3">Facebook</div>
+            <p class="text-[#616161] text-[12px] leading-relaxed mb-6">
               Latest updates and events that connect our community.
             </p>
             <button
@@ -629,10 +658,10 @@
             </button>
           </a>
 
-          <div class="aspect-square overflow-hidden rounded-sm  transition-all duration-1000">
+          <div class="aspect-square overflow-hidden rounded-sm transition-all duration-1000">
             <img src="./assests/images/work/3.jpg" class="w-full h-full object-cover" />
           </div>
-          <div class="aspect-square overflow-hidden rounded-sm  transition-all duration-1000">
+          <div class="aspect-square overflow-hidden rounded-sm transition-all duration-1000">
             <img src="./assests/images/work/1.jpg" class="w-full h-full object-cover" />
           </div>
         </div>
@@ -645,8 +674,9 @@
     <div class="container mx-auto px-6">
       <div class="flex flex-col flex-col-reverse md:flex-row justify-between items-start md:items-center gap-8">
         <div class="w-full">
-          <p class="text-[10px] lg:pl-35 text-white/30 uppercase tracking-widest text-right md:text-left">© Copyright
-            2026. All rights reserved.</p>
+          <p class="text-[10px] lg:pl-35 text-white/30 uppercase tracking-widest text-right md:text-left">
+            © Copyright 2026. All rights reserved.
+          </p>
         </div>
 
         <div class="flex flex-col md:flex-row gap-8 lg:gap-16 w-full">
@@ -655,7 +685,9 @@
               <i class="fas fa-phone text-[#f7ae47] text-sm"></i>
             </div>
             <div>
-              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">Speak With James</p>
+              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">
+                Speak With James
+              </p>
               <p class="text-sm font-medium tracking-wide">07703 437 971</p>
             </div>
           </div>
@@ -664,16 +696,18 @@
               <i class="fas fa-envelope text-[#f7ae47] text-sm"></i>
             </div>
             <div>
-              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">Email Us</p>
-              <p class="text-sm font-medium tracking-wide">james@trimandpropergardens.com</p>
+              <p class="text-[9px] uppercase tracking-widest text-white/40 mb-1">
+                Email Us
+              </p>
+              <p class="text-sm font-medium tracking-wide">
+                james@trimandpropergardens.com
+              </p>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </footer>
-
 
   <!-- Floating Social Bar -->
   <div
@@ -707,7 +741,9 @@
     const mobileMenu = document.getElementById("mobileMenu");
     const closeMenu = document.getElementById("close");
     const mobileMenuBackdrop = document.getElementById("mobileMenuBackdrop");
-    const mobileMenuLinks = document.querySelectorAll('#mobileMenu a[data-menu-link]');
+    const mobileMenuLinks = document.querySelectorAll(
+      "#mobileMenu a[data-menu-link]",
+    );
 
     const openMobileMenu = () => {
       if (!mobileMenu) return;
@@ -726,7 +762,9 @@
     mobileMenuBtn?.addEventListener("click", openMobileMenu);
     closeMenu?.addEventListener("click", closeMobileMenu);
     mobileMenuBackdrop?.addEventListener("click", closeMobileMenu);
-    mobileMenuLinks.forEach((link) => link.addEventListener("click", closeMobileMenu));
+    mobileMenuLinks.forEach((link) =>
+      link.addEventListener("click", closeMobileMenu),
+    );
   </script>
 
   <script>
@@ -791,46 +829,45 @@
       });
     });
 
-
     function openLightbox(element) {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
 
       // Get the image source and alt text from the clicked card
-      const clickedImg = element.querySelector('img');
-      const imgSrc = clickedImg.getAttribute('src');
-      const imgAlt = clickedImg.getAttribute('alt');
+      const clickedImg = element.querySelector("img");
+      const imgSrc = clickedImg.getAttribute("src");
+      const imgAlt = clickedImg.getAttribute("alt");
 
       // Update the lightbox content
       lightboxImg.src = imgSrc;
       lightboxCaption.textContent = imgAlt;
 
       // Show the lightbox with a fade effect
-      lightbox.classList.remove('hidden');
+      lightbox.classList.remove("hidden");
       setTimeout(() => {
-        lightboxImg.classList.remove('scale-95');
-        lightboxImg.classList.add('scale-100');
+        lightboxImg.classList.remove("scale-95");
+        lightboxImg.classList.add("scale-100");
       }, 10);
 
       // Prevent scrolling on the main page while open
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     }
 
     function closeLightbox() {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
 
-      lightboxImg.classList.add('scale-95');
-      lightbox.classList.add('hidden');
+      lightboxImg.classList.add("scale-95");
+      lightbox.classList.add("hidden");
 
       // Re-enable scrolling
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
 
     // Close on 'Esc' key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
     });
   </script>
 </body>
