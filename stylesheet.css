@@ -175,6 +175,18 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
+.reviews-swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #141c14;
+    opacity: 0.35;
+}
+
+.reviews-swiper-pagination .swiper-pagination-bullet-active {
+    background: #399a32;
+    opacity: 1;
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }

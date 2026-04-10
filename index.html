@@ -488,7 +488,7 @@
           Testimonials
         </p>
 
-        <h2 class="section-title text-[#141c14] mb-2 text-center lg:text-left leading-snug">
+        <h2 class="section-title text-[#141c14] mb-5 text-center lg:text-left leading-snug">
           Client <span class="italic font-light text-[#399a32]">Reviews</span>
         </h2>
 
@@ -499,31 +499,73 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “Professional, reliable, and extremely detail-oriented. The
-                  team was helpful from start to finish and delivered exactly
-                  what they promised. Highly recommended!”
-                </p>
+                <div class="space-y-4">
+                  <p class="text-[#616161] text-[16px] lin font-inter px-2 md:px-0 text-center">
+                    "James was reliable, friendly, and very responsive throughout the whole process. His pricing was
+                    reasonable and he really couldn't do enough to help - nothing ever seemed like a bother. From start
+                    to finish he was easy to deal with, worked efficiently, and kept everything tidy. I wouldn't
+                    hesitate to recommend him or use his services again. Thank you so much, James!"
+                  </p>
+                  <p class="text-[#399a32] text-[12px] uppercase tracking-[0.2em] font-semibold text-center">
+                    Rosie, from Merstham
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide">
-                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “We use them for regular garden maintenance and the
-                  difference is amazing. The lawn is always neat, weeds are
-                  kept under control, and everything looks tidy year-round
-                  without us having to worry.”
-                </p>
+                <div class="space-y-4">
+                  <p class="text-[#616161] text-[16px] lin font-inter px-2 md:px-0 text-center">
+                    "James handles our regular garden maintenance and the difference is amazing. The lawn is always
+                    neat, weeds are kept under control, and everything stays tidy year-round without us having to
+                    worry. He is always punctual, communicates clearly, and makes sure every visit leaves the garden
+                    looking fresh and well cared for."
+                  </p>
+                  <p class="text-[#399a32] text-[12px] uppercase tracking-[0.2em] font-semibold text-center">
+                    Claire, from Reigate
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide">
-                <p class="text-[#616161] text-[16px]/8 lin font-inter px-2 md:px-0 text-center">
-                  “They helped redesign parts of our garden and handled all
-                  the planting and pruning beautifully. The garden now has
-                  colour and structure throughout the year. Very knowledgeable
-                  and creative team.”
-                </p>
+                <div class="space-y-4">
+                  <p class="text-[#616161] text-[16px] lin font-inter px-2 md:px-0 text-center">
+                    "James and the team helped redesign parts of our garden and handled all the planting and pruning
+                    beautifully. The garden now has colour and structure throughout the year. They listened to what we
+                    wanted, offered practical ideas, and completed everything carefully to a really high standard."
+                  </p>
+                  <p class="text-[#399a32] text-[12px] uppercase tracking-[0.2em] font-semibold text-center">
+                    Mark, from Redhill
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="space-y-4">
+                  <p class="text-[#616161] text-[16px] lin font-inter px-2 md:px-0 text-center">
+                    "Very polite, punctual and hardworking team. They arrived when they said they would, finished on
+                    time, and left everything spotless. The work was done with real attention to detail, and the whole
+                    space looked noticeably better as soon as they were finished."
+                  </p>
+                  <p class="text-[#399a32] text-[12px] uppercase tracking-[0.2em] font-semibold text-center">
+                    Anita, from Caterham
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="space-y-4">
+                  <p class="text-[#616161] text-[16px] lin font-inter px-2 md:px-0 text-center">
+                    "Fantastic service from quote to completion. The team gave great advice, worked carefully around
+                    our plants, and the garden has never looked better. They were friendly throughout, explained each
+                    step clearly, and made the whole process easy from start to finish."
+                  </p>
+                  <p class="text-[#399a32] text-[12px] uppercase tracking-[0.2em] font-semibold text-center">
+                    Tom, from Horley
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination reviews-swiper-pagination md:hidden !relative !bottom-0 mt-6"></div>
           </div>
           <div class="swiper-button bg-green-500 rounded-full swiper-button-next"></div>
         </div>
@@ -658,10 +700,10 @@
             </button>
           </a>
 
-          <div class="aspect-square overflow-hidden rounded-sm transition-all duration-1000">
+          <div class="hidden lg:block aspect-square overflow-hidden rounded-sm transition-all duration-1000">
             <img src="./assests/images/work/3.jpg" class="w-full h-full object-cover" />
           </div>
-          <div class="aspect-square overflow-hidden rounded-sm transition-all duration-1000">
+          <div class="hidden lg:block aspect-square overflow-hidden rounded-sm transition-all duration-1000">
             <img src="./assests/images/work/1.jpg" class="w-full h-full object-cover" />
           </div>
         </div>
@@ -796,6 +838,10 @@
       },
       fadeEffect: {
         crossFade: true, // 👈 Smooth cross-fade
+      },
+      pagination: {
+        el: ".reviews-swiper-pagination",
+        clickable: true,
       },
       navigation: {
         nextEl: ".swiper-button-next",
