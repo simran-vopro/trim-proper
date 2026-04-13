@@ -22,16 +22,6 @@ body {
 
 /* Hero section start */
 
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 .overlay {
     position: absolute;
     top: 0;
@@ -56,10 +46,6 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.menu-item a {
-    /* background-color: #fefaf0; */
-}
-
 .menu-item.active::before,
 .menu-item:hover::before {
     content: '';
@@ -69,7 +55,6 @@ body {
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    /* background-image: url('./assests/images/active_menu.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -83,10 +68,6 @@ body {
 .menu-item.active {
     color: #65e95b;
     font-weight: 800;
-}
-
-.hover-color-green:hover {
-    color: #399a32
 }
 
 .hero-title {
@@ -132,7 +113,7 @@ body {
 #services {
     position: relative;
     background-color: #F8F5F0;
-    background-image: url(./assests/images/work/4.jpg);
+    background-image: url(./assests/images/work/4.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,10 +133,10 @@ body {
 
 #reviews {
     background-color: #fff;
-    background-image: url(./assests/images/reviews_bg.png);
+    background-image: url(./assests/images/reviews_bg.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 
 .swiper-navigation-icon {
@@ -188,13 +169,6 @@ body {
 }
 
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
 
 /* ===== RESPONSIVE DESIGN ===== */
 /* Mobile view */
